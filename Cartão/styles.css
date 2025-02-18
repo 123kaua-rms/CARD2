@@ -1,0 +1,85 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./img/Favela.jpg'); /* Substitua com o caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo do contêiner de cards */
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    z-index: 1; /* Para garantir que o conteúdo fique visível acima do fundo */
+}
+
+/* Estilo do Card */
+.card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(160, 160, 160);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilo da Imagem do Card */
+.img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Estilo do corpo do Card */
+.body {
+    padding: 20px;
+}
+
+/* Estilo do título */
+.titulo {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+/* Estilo do texto */
+.texto {
+    font-size: 1rem;
+    color: #2b0202;
+    margin-bottom: 20px;
+}
+
+/* Estilo do botão */
+.botao {
+    padding: 10px 20px;
+    background-color: #830101;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #2980b9;
+}
